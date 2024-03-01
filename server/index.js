@@ -1,6 +1,7 @@
 const express = require('express')
-const stripe = require('stripe')("sk_test_51OpCHgFtlK1NEDZWYSX4x7vvClKtpSwWb9X3wwIccBUsNq56b7HmMRISbv4xG1QGx7Bb12NTpeXt5FlIkcdXASie00X5jHwmxh")
 const bodyParser = require('body-parser')
+require('dotenv').config()
+const stripe = require('stripe')(process.env.SECRET_KEY)
 
 const app = express()
 
