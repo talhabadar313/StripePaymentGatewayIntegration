@@ -18,7 +18,7 @@ const PaymentScreen = () => {
 
     const OnDone = async () => {
         let Apidata = {
-            amount: 5000,
+            amount: 2000,
             currency: 'usd'
         };
     
